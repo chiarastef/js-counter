@@ -7,6 +7,10 @@
     <title>Counter</title>
     <link rel="icon" href="./img/counter.png" type="image/png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/@pqina/flip/dist/flip.min.css"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/9bdeaf89e7.js"
       crossorigin="anonymous"
@@ -15,7 +19,12 @@
   <body>
     <div class="container">
       <h1>Counter</h1>
-      <div id="counter-el"></div>
+      <div class="tick" id="counter-el">
+        <span
+          data-view="flip"
+          data-style="flip-easing: ease-in-out-quart"
+        ></span>
+      </div>
       <button id="minus" title="Minus one">
         <i class="fa-solid fa-minus"></i>
       </button>
@@ -23,7 +32,11 @@
       <button id="plus" title="Plus one">
         <i class="fa-solid fa-plus"></i>
       </button>
+      <button id="save-button">Save</button>
+      <div class="saved">Saved: <span id="saved-el"></span></div>
     </div>
+
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
   </body>
 </html>

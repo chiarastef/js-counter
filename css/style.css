@@ -33,7 +33,7 @@ body {
   font-weight: normal;
 }
 
-.container div {
+.container #counter-el {
   font-size: 45px;
   margin: 25px 0 45px;
 }
@@ -58,8 +58,20 @@ button:active {
   background-color: #151f30;
 }
 
-button#reset {
+button#reset,
+button#save-button {
   text-transform: uppercase;
+}
+
+button#save-button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.container .saved {
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 415px) {
@@ -77,7 +89,7 @@ button#reset {
     font-size: 55px;
   }
 
-  .container div {
+  .container #counter-el {
     font-size: 50px;
   }
 
@@ -93,8 +105,13 @@ button#reset {
     margin-top: 50px;
   }
 
-  .container div {
+  .container #counter-el {
     margin: 30px 0 50px;
+  }
+
+  .container .saved {
+    font-size: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -108,7 +125,7 @@ button#reset {
     font-size: 58px;
   }
 
-  .container div {
+  .container #counter-el {
     font-size: 52px;
   }
 }
@@ -117,14 +134,14 @@ button#reset {
   .container {
     width: 550px;
     padding-bottom: 80px;
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .container h1 {
     font-size: 60px;
   }
 
-  .container div {
+  .container #counter-el {
     font-size: 55px;
   }
 }
