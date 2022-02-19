@@ -53,6 +53,7 @@ button {
   transition: background-color 400ms ease-in-out;
 }
 
+button:hover,
 button:active {
   background-color: #151f30;
 }
@@ -109,10 +110,6 @@ button#reset {
 
   .container div {
     font-size: 52px;
-  }
-
-  button:hover {
-    background-color: #151f30;
   }
 }
 
