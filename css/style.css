@@ -53,9 +53,12 @@ button {
   transition: background-color 400ms ease-in-out;
 }
 
-button:hover,
 button:active {
   background-color: #151f30;
+}
+
+button#reset {
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 415px) {
@@ -106,6 +109,10 @@ button:active {
 
   .container div {
     font-size: 52px;
+  }
+
+  button:hover {
+    background-color: #151f30;
   }
 }
 
