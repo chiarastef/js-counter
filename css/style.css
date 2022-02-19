@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 :root {
-  --primary-color: #ec729c;
-  --background-color: #f4aeba;
+  --primary-color: #1a2639;
+  --font-color: #fefefe;
+  --background-color: #3e4a61;
 }
 
 * {
@@ -11,4 +14,113 @@
 
 body {
   background-color: var(--background-color);
+  font-family: "Oswald", sans-serif;
+  color: var(--font-color);
+}
+
+.container {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 50px 0 60px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.container div {
+  font-size: 45px;
+  margin: 25px 0 45px;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 400ms ease-in-out;
+}
+
+button:hover,
+button:active {
+  background-color: #151f30;
+}
+
+@media screen and (min-width: 415px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 70%;
+  }
+
+  .container h1 {
+    font-size: 55px;
+  }
+
+  .container div {
+    font-size: 50px;
+  }
+
+  button {
+    font-size: 19px;
+    padding: 14px 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 60%;
+    margin-top: 50px;
+  }
+
+  .container div {
+    margin: 30px 0 50px;
+  }
+}
+
+@media screen and (min-width: 922px) {
+  .container {
+    width: 50%;
+    margin-top: 80px;
+  }
+
+  .container h1 {
+    font-size: 58px;
+  }
+
+  .container div {
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 550px;
+    padding-bottom: 80px;
+    margin-top: 100px;
+  }
+
+  .container h1 {
+    font-size: 60px;
+  }
+
+  .container div {
+    font-size: 55px;
+  }
 }
