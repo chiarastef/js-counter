@@ -2,22 +2,22 @@
 
 This is the final project from the JavaScript basics course on the online course provider [Start2Impact](https://www.start2impact.it/), where I'm studying front-end development.
 
-## Screenshots
-
-<img src="./screenshots/counter-preview-1.png" alt="Personal portfolio desktop preview" width="700px">
-<img src="./screenshots/counter-preview-2.png" alt="Personal portfolio desktop preview" width="700px">
-
 ## Link
 
 - [Project url](https://chiarastef.github.io/js-counter/)
 
-## The project
+## Screenshots
+
+<img src="./screenshots/counter-preview-1.png" alt="Counter website preview" width="650px">
+<img src="./screenshots/counter-preview-2.png" alt="Counter website preview with saved values list" width="650px">
+
+## Project
 Users should be able to:
-- Increase and decrease the counter clicking or tapping on the + and - buttons
-- Reset the counter when clicking or tapping on the reset button
-- Save the current number on the counter when clicking or tapping on the save button 
+- Increase and decrease the counter by clicking or tapping on the + and - buttons
+- Reset the counter by clicking or tapping on the reset button
+- Save the current number on the counter by clicking or tapping on the save button 
 - See the saved numbers below the save button
-- Delete the saved numbers when clicking or tapping on the delete button 
+- Delete the saved numbers by clicking or tapping on the delete button 
 
 ## Built with
 

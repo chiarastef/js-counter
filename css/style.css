@@ -38,6 +38,7 @@ body {
   background: var(--hover-color);
 }
 
+/* Counter */
 .container {
   width: 90%;
   text-align: center;
@@ -58,6 +59,7 @@ h1 {
   margin: 10px 0 25px;
 }
 
+/* Buttons */
 button {
   font-family: inherit;
   font-size: 18px;
@@ -89,6 +91,12 @@ button#save {
   margin: 10px auto 20px;
 }
 
+button#delete {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Saved element */
 .saved {
   width: 80%;
   font-size: 19px;
@@ -98,11 +106,8 @@ button#save {
   margin: auto;
 }
 
-button#delete {
-  font-size: 14px;
-  margin-top: 15px;
-}
-
+/* Media queries */
+/* Mobile */
 @media screen and (min-width: 415px) {
   .container {
     width: 80%;
@@ -125,6 +130,7 @@ button#delete {
   }
 }
 
+/* Tablet */
 @media screen and (min-width: 768px) {
   .container {
     width: 60%;
@@ -135,6 +141,7 @@ button#delete {
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 922px) {
   .container {
     width: 50%;
