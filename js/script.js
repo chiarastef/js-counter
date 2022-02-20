@@ -1,21 +1,23 @@
 const counterEl = document.querySelector("#counter-el");
+const savedEl = document.querySelector("#saved-el");
 const plus = document.querySelector("#plus");
 const minus = document.querySelector("#minus");
 const reset = document.querySelector("#reset");
-const savedEl = document.querySelector("#saved-el");
-const saveButton = document.querySelector("#save-button");
+const save = document.querySelector("#save");
+const deleteSaved = document.querySelector("#delete");
 
 let counter = 0;
-counterEl.setAttribute("data-value", counter);
+counterEl.textContent = counter;
 
 plus.addEventListener("click", plusOne);
 minus.addEventListener("click", minusOne);
 reset.addEventListener("click", resetCounter);
-saveButton.addEventListener("click", saveNumber);
+save.addEventListener("click", saveNumber);
+deleteSaved.addEventListener("click", deleteValues);
 
 function plusOne() {
   counter++;
-  counterEl.setAttribute("data-value", counter);
+  counterEl.textContent = counter;
 }
 
 function minusOne() {
@@ -23,12 +25,12 @@ function minusOne() {
     return;
   }
   counter--;
-  counterEl.setAttribute("data-value", counter);
+  counterEl.textContent = counter;
 }
 
 function resetCounter() {
   counter = 0;
-  counterEl.setAttribute("data-value", counter);
+  counterEl.textContent = counter;
 }
 
 function saveNumber() {
@@ -37,7 +39,10 @@ function saveNumber() {
   } else {
     savedEl.textContent += " - " + counter;
   }
-
   counter = 0;
-  counterEl.setAttribute("data-value", counter);
+  counterEl.textContent = counter;
+}
+
+function deleteValues() {
+  savedEl.textContent = "";
 }
