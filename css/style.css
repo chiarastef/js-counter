@@ -54,7 +54,7 @@ h1 {
   font-weight: normal;
 }
 
-#counter-el {
+.counter {
   font-size: 50px;
   margin: 10px 0 25px;
 }
@@ -80,18 +80,18 @@ button:active {
   background-color: var(--hover-color);
 }
 
-button#reset,
-button#save,
-button#delete {
+button.reset,
+button.save,
+button.delete {
   text-transform: uppercase;
 }
 
-button#save {
+button.save {
   display: block;
   margin: 10px auto 20px;
 }
 
-button#delete {
+button.delete {
   font-size: 14px;
   margin-top: 15px;
 }
@@ -120,7 +120,7 @@ button#delete {
   }
 
   h1,
-  #counter-el {
+  .counter {
     font-size: 55px;
   }
 
@@ -136,7 +136,7 @@ button#delete {
     width: 60%;
   }
 
-  #counter-el {
+  .counter {
     margin: 15px 0 30px;
   }
 }
@@ -152,15 +152,15 @@ button#delete {
     font-size: 58px;
   }
 
-  #counter-el {
+  .counter {
     font-size: 55px;
   }
 
-  button#save {
+  button.save {
     margin-bottom: 25px;
   }
 
-  button#delete {
+  button.delete {
     font-size: 15px;
     margin-top: 20px;
   }
@@ -175,7 +175,7 @@ button#delete {
     font-size: 60px;
   }
 
-  #counter-el {
+  .counter {
     font-size: 58px;
   }
 }

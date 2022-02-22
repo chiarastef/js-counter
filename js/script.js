@@ -1,10 +1,50 @@
-const counterEl = document.querySelector("#counter-el");
+const heading = document.querySelector("h1");
+const savedSpace = document.querySelector(".saved");
 const savedEl = document.querySelector("#saved-el");
-const plus = document.querySelector("#plus");
-const minus = document.querySelector("#minus");
-const reset = document.querySelector("#reset");
-const save = document.querySelector("#save");
-const deleteSaved = document.querySelector("#delete");
+
+// Create and insert counter element to show counter value
+const counterEl = document.createElement("div");
+counterEl.classList.add("counter");
+heading.after(counterEl);
+
+// Create and instert button to subtract from counter
+const minus = document.createElement("button");
+minus.setAttribute("title", "Minus one");
+counterEl.after(minus);
+// Add icon inside minus button
+const minusIcon = document.createElement("i");
+minusIcon.classList.add("fa-solid", "fa-minus");
+minus.append(minusIcon);
+
+// Create and insert reset button
+const reset = document.createElement("button");
+reset.classList.add("reset");
+reset.setAttribute("title", "Reset");
+reset.textContent = "Reset";
+minus.after(reset);
+
+// Create and instert button to add to counter
+const plus = document.createElement("button");
+plus.setAttribute("title", "Plus one");
+reset.after(plus);
+// Add icon inside plus button
+const plusIcon = document.createElement("i");
+plusIcon.classList.add("fa-solid", "fa-plus");
+plus.append(plusIcon);
+
+// Create and insert save button
+const save = document.createElement("button");
+save.classList.add("save");
+save.setAttribute("title", "Save");
+save.textContent = "Save";
+plus.after(save);
+
+// Create and insert delete saved button
+const deleteSaved = document.createElement("button");
+deleteSaved.classList.add("delete");
+deleteSaved.setAttribute("title", "Delete saved");
+deleteSaved.textContent = "Delete saved";
+savedSpace.after(deleteSaved);
 
 // Set counter to 0 at launch
 let counter = 0;
