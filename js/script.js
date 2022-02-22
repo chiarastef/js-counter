@@ -7,7 +7,7 @@ const counterEl = document.createElement("div");
 counterEl.classList.add("counter");
 heading.after(counterEl);
 
-// Create and instert button to subtract from counter
+// Create and insert button to subtract from counter
 const minus = document.createElement("button");
 minus.setAttribute("title", "Minus one");
 counterEl.after(minus);
@@ -23,7 +23,7 @@ reset.setAttribute("title", "Reset");
 reset.textContent = "Reset";
 minus.after(reset);
 
-// Create and instert button to add to counter
+// Create and insert button to add to counter
 const plus = document.createElement("button");
 plus.setAttribute("title", "Plus one");
 reset.after(plus);
