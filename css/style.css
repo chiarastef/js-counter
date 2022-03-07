@@ -20,10 +20,6 @@ body {
   color: var(--font-color);
 }
 
-img {
-  display: none;
-}
-
 /*Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
