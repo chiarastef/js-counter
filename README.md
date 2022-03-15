@@ -31,6 +31,6 @@ Users should be able to:
 
 Chiara Stefanelli - Front-End Development Student based in Italy
 
-- Website - [Chiara Stefanelli](https://chiarastef.github.io/personal-portfolio/)
+- Website - [Chiara Stefanelli](https://chiarastefanelli.netlify.app/)
 - LinkedIn - [Chiara Stefanelli](https://www.linkedin.com/in/chiarastefanelli/?locale=en_US)
 - start2impact profile - [Chiara Stefanelli](https://talent.start2impact.it/profile/chiara-stefanelli-13)
